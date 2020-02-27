@@ -34,6 +34,8 @@ target 'RNTvOSPoC' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'RNSearchController', :path => '../src/search-controller'
+  
   use_native_modules!
   target 'RNTvOSPoCTests' do
     inherit! :search_paths
@@ -73,6 +75,8 @@ target 'RNTvOSPoC-tvOS' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  pod 'RNSearchController', :path => '../src/search-controller'
 
   use_native_modules!
   target 'RNTvOSPoC-tvOSTests' do
